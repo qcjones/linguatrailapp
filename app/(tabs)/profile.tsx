@@ -111,7 +111,7 @@ export default function ProfileScreen() {
         </TouchableOpacity>
         
         {/* Privacy Policy Menu Item */}
-        <TouchableOpacity style={styles.menuItem}>
+        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/privacy-policy')}>
           <View style={styles.menuItemLeft}>
             <View style={styles.menuIconContainer}>
               <Svg width={40} height={40} viewBox="0 0 40 40" fill="none">
@@ -130,7 +130,7 @@ export default function ProfileScreen() {
         </TouchableOpacity>
         
         {/* Terms & Conditions Menu Item */}
-        <TouchableOpacity style={styles.menuItem}>
+        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/terms-and-conditions')}>
           <View style={styles.menuItemLeft}>
             <View style={styles.menuIconContainer}>
               <Svg width={40} height={40} viewBox="0 0 40 40" fill="none">
