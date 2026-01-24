@@ -30,6 +30,8 @@ export default function RootLayout() {
               <Stack.Screen name="add-step3" options={{ headerShown: false }} />
               <Stack.Screen name="summary" options={{ headerShown: false }} />
               <Stack.Screen name="subscription" options={{ headerShown: false }} />
+              <Stack.Screen name="privacy-policy" options={{ headerShown: false }} />
+              <Stack.Screen name="terms-and-conditions" options={{ headerShown: false }} />
             </Stack>
             <StatusBar style="auto" />
           </ToastProvider>
