@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-nati
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { Svg, Path, Circle, G, Defs, ClipPath, Rect } from 'react-native-svg';
+import { ThemedView } from '@/components/themed-view';
 
 export default function LessonsScreen() {
   const router = useRouter();
@@ -20,7 +21,7 @@ export default function LessonsScreen() {
   };
 
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
         <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
           {/* Header */}
@@ -158,14 +159,13 @@ export default function LessonsScreen() {
           </View>
         </ScrollView>
       </SafeAreaView>
-    </View>
+    </ThemedView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F6F7FA',
   },
   safeArea: {
     flex: 1,

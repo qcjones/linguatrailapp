@@ -5,6 +5,7 @@ import Svg, { Path, Rect, Defs, LinearGradient as SvgLinearGradient, Stop, Circl
 import { useFeatureFlags } from '@/contexts/FeatureFlagContext';
 import { useRouter } from 'expo-router';
 import { useToast } from '@/hooks/useToast';
+import { ThemedView } from '@/components/themed-view';
 
 export default function HomeScreen() {
   const { isOn, setFlag } = useFeatureFlags();
@@ -17,7 +18,7 @@ export default function HomeScreen() {
   const shouldShowNotification = isOn('extendedFirstRun') && !isOn('hasSeenExtendedFirstRun');
 
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <ThemedView style={styles.safeArea}>
       <View style={styles.container}>
         {/* Background Ellipses */}
         <View style={styles.ellipse12} />
@@ -292,18 +293,16 @@ export default function HomeScreen() {
       </View>
       </ScrollView>
     </View>
-    </SafeAreaView>
+    </ThemedView>
   );
 }
 
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#F6F7FA',
   },
   container: {
     flex: 1,
-    backgroundColor: '#F6F7FA',
   },
   scrollView: {
     flex: 1,

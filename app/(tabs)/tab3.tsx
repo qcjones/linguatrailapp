@@ -1,10 +1,11 @@
 import { View, StyleSheet, Text, Image, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Path, Rect, Defs, LinearGradient as SvgLinearGradient, Stop, Circle } from 'react-native-svg';
+import { ThemedView } from '@/components/themed-view';
 
 export default function InsightsScreen() {
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <ThemedView style={styles.safeArea}>
       <View style={styles.container}>
 
         <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
@@ -143,18 +144,16 @@ export default function InsightsScreen() {
           </View>
         </ScrollView>
       </View>
-    </SafeAreaView>
+    </ThemedView>
   );
 }
 
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#F6F7FA',
   },
   container: {
     flex: 1,
-    backgroundColor: '#F6F7FA',
   },
   scrollView: {
     flex: 1,
