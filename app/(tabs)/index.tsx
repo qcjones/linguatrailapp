@@ -39,13 +39,13 @@ export default function HomeScreen() {
           shouldShowNotification && styles.profileAvatarWithNotification
         ]}>
           <Image
-            source={require('@/assets/images/zander-van-gogh.png')}
+            source={require('@/assets/q.jpg')}
             style={styles.profileAvatar}
           />
         </View>
           <View style={styles.greetingContainer}>
             <Text style={styles.greetingSubtitle}>Welcome back!</Text>
-            <Text style={styles.greetingTitle}>Zander 👋</Text>
+            <Text style={styles.greetingTitle}>Quinton 👋</Text>
           </View>
         </View>
         <View style={styles.streakContainer}>
