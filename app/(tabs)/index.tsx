@@ -46,7 +46,7 @@ export default function HomeScreen() {
           shouldShowNotification && styles.profileAvatarWithNotification
         ]}>
           <Image
-            source={require('@/assets/images/zander-van-gogh.png')}
+            source={require('@/assets/q.jpg')}
             style={styles.profileAvatar}
           />
         </ThemedView>
