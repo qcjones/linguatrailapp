@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+ import { createContext, useContext } from 'react';
 import { useColorScheme as useRNColorScheme } from 'react-native';
 
 export type ColorScheme = 'light' | 'dark';

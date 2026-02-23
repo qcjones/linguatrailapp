@@ -52,7 +52,7 @@ export default function HomeScreen() {
         </ThemedView>
           <View style={styles.greetingContainer}>
             <ThemedText style={styles.greetingSubtitle}>Welcome back!</ThemedText>
-            <ThemedText style={styles.greetingTitle}>Zander 👋</ThemedText>
+            <ThemedText style={styles.greetingTitle}>Quinton 👋</ThemedText>
           </View>
         </View>
         <ThemedView lightColor="#FEF9EB" darkColor="#2D2A1F" style={styles.streakContainer}>
